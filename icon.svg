@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="none">
+  <!-- 插件分类：三条分组行，左侧竖线代表分组归属，右侧方块代表插件条目 -->
+  <!-- 第一组：核心层（实心，表示不可关） -->
+  <rect x="1.5" y="1.6" width="2" height="2" rx="0.6" fill="#4C8DFF"/>
+  <rect x="5" y="1.6" width="9.5" height="2" rx="1" fill="#4C8DFF" opacity="0.85"/>
+  <!-- 第二组：在用（半透明，表示启用中） -->
+  <rect x="1.5" y="7" width="2" height="2" rx="0.6" fill="#4C8DFF" opacity="0.6"/>
+  <rect x="5" y="7" width="6.5" height="2" rx="1" fill="#4C8DFF" opacity="0.6"/>
+  <circle cx="13.8" cy="8" r="1.2" fill="#4C8DFF" opacity="0.6"/>
+  <!-- 第三组：闲置（描边，表示已关闭，可清理） -->
+  <rect x="1.5" y="12.4" width="2" height="2" rx="0.6" stroke="#8A8F98" stroke-width="1"/>
+  <rect x="5" y="12.4" width="5" height="2" rx="1" stroke="#8A8F98" stroke-width="1"/>
+</svg>

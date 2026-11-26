@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plugin groups",
+    "description": "Adds a Groups tab to the plugin page: installed plugins are regrouped by necessity into core layers, self-installed in use, self-installed idle (cleanup candidates), official optional and broken, with in-place switches."
+  }
+}

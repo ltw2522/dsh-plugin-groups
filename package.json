@@ -1,0 +1,62 @@
+{
+  "name": "@ltw2522/dsh-plugin-groups",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "在插件页新增「分类」页签：按必要性把已装插件分成核心层、自装在用、自装闲置（清理候选）、官方可选与异常五区，并支持就地开关与自建二级分组。",
+  "license": "MIT",
+  "author": "ltw2522",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "plugin",
+    "plugin-manager",
+    "ui",
+    "organize"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "engines": {
+    "dsh": ">=0.2.1-rc.5 <0.3.0-0",
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltw2522/dsh-plugin-groups.git"
+  },
+  "homepage": "https://github.com/ltw2522/dsh-plugin-groups#readme",
+  "bugs": {
+    "url": "https://github.com/ltw2522/dsh-plugin-groups/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-plugin-manager"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# 插件分类：只加一行 Host 入口（空实现），真正的界面在 client.js 的 plugins.tab 插槽里。
+- insert:
+    - id: plugin-groups
+      name: '@ltw2522/dsh-plugin-groups'
+
